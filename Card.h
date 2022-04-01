@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Casino
 {
     internal class Card
     {
-        //public Image Image1 { set; get;}
+        public Image imgs;
         public int CardFace{ get; set; }
         public int CardSuit{ get; set; }
         public string CardName{ get; set; }
@@ -77,8 +78,72 @@ namespace Casino
         public Card(int cardNumber) {
             this.CardSuit= cardNumber/13;
             this.CardFace= cardNumber%13;
-            //this.Image1=imageArray[cardNumber]
+            GetImage();
             GetCardName();
+        }
+        private void GetImage() {
+            string first;
+            string second;
+            string imageName;
+            switch (this.CardSuit)
+            {
+            case 0:
+                second = "spade";
+                break;
+            case 1:
+                second = "club";
+                break;
+            case 2:
+                second = "heart";
+                break;
+            default:
+                second = "diamond";
+                break;
+            }
+            switch (this.CardFace)
+            {
+            case 0:
+                first = "ace";
+                break;
+            case 1:
+                first = "2";
+                break;
+            case 2:
+                first = "3";
+                break;
+            case 3:
+                first = "4";
+                break;
+            case 4:
+                first = "5";
+                break;
+            case 5:
+                first = "6";
+                break;
+            case 6:
+                first = "7";
+                break;
+            case 7:
+                first = "8";
+                break;
+            case 8:
+                first = "9";
+                break;
+            case 9:
+                first = "10";
+                break;
+            case 10:
+                first = "jack";
+                break;
+            case 11:
+                first = "queen";
+                break;
+            default:
+                first = "king";
+                break;
+            }
+            imageName = first + "_" + second + ".png";
+            imgs = Image.FromFile(imageName);
         }
     }
 }

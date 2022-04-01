@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Casino
 {
@@ -11,77 +12,60 @@ namespace Casino
         private int StampID;
         private string StampName;
         private int PayOut;
-        //public Image Ima ge1 { set; get;}
+        public Image Image1;
         public Stamp(int id) {
             StampID = id;
             if (id == 0) {
-                //this.Image1=imageArray[id]
-                StampName = "orange";
+                Image1=Image.FromFile("bar.png");
+                StampName = "Bar";
                 PayOut = 1;
             }
             else if (id == 1) {
-                //this.Image1=imageArray[id]
-                StampName = "cherry";
+                Image1 = Image.FromFile("apple.png");
+                StampName = "apple";
                 PayOut = 2;
 
             }
             else if (id == 2) {
-                //this.Image1=imageArray[id]
-                StampName = "watermelon";
+                Image1 = Image.FromFile("banana.png");
+                StampName = "banana";
                 PayOut = 2;
 
             }
             else if (id == 3) {
-                //this.Image1=imageArray[id]
-                StampName = "horseshoe";
+                Image1 = Image.FromFile("grape.png");
+                StampName = "grape";
                 PayOut = 3;
 
 
             }
             else if (id == 4) {
-                //this.Image1=imageArray[id]
-                StampName = "clover";
+                Image1 = Image.FromFile("orange.png");
+                StampName = "orange";
                 PayOut = 4;
 
 
             }
             else if (id == 5) {
-                //this.Image1=imageArray[id]
-                StampName = "coins";
+                Image1 = Image.FromFile("stawberry.png");
+                StampName = "strawberry";
                 PayOut = 5;
 
 
             }
             else if (id == 6) {
-                //this.Image1=imageArray[id]
-                StampName = "dollars";
+                Image1 = Image.FromFile("cherry.png");
+                StampName = "cherry";
                 PayOut = 3;
-
             }
             else if (id == 7) {
-                //this.Image1=imageArray[id]
-                StampName = "7";
+                Image1 = Image.FromFile("gem.png");
+                StampName = "gem";
                 PayOut = 7;
-
-
-            }
-            else if (id == 8) {
-                //this.Image1=imageArray[id]
-                StampName = "777";
-                PayOut = 21;
-
-
-            }
-            else if (id == 9) {
-                //this.Image1=imageArray[id]
-                StampName = "diamond";
-                PayOut = 100;
-
-
             }
             else {           
-                //this.Image1=imageArray[id]
-                StampName = "heart";
+                Image1 = Image.FromFile("jackpot.png");
+                StampName = "jackpot";
                 PayOut = 10;
 
 

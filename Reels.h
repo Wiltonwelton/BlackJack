@@ -32,12 +32,12 @@ namespace Casino
                     new Stamp(img),new Stamp(img), new Stamp(img), new Stamp(img), new Stamp(img), new Stamp(img) };
             }
             else {
-                Reel1 = new List <Stamp>{ new Stamp(0),new Stamp(0), new Stamp(0), new Stamp(0), new Stamp(0), new Stamp(0), new Stamp(0), 
-                    new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8),
-                    new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8) };
+                Reel1 = new List <Stamp>{ new Stamp(0),new Stamp(0), new Stamp(1), new Stamp(2), new Stamp(0), new Stamp(0), new Stamp(3), 
+                    new Stamp(4), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8),
+                    new Stamp(5), new Stamp(4), new Stamp(6), new Stamp(2), new Stamp(1) };
                 Reel2 = new List <Stamp>{ new Stamp(0),new Stamp(0), new Stamp(0), new Stamp(0), new Stamp(0), new Stamp(0), new Stamp(0),
                     new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8),
-                    new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8) };
+                    new Stamp(4), new Stamp(6), new Stamp(4), new Stamp(8), new Stamp(8) };
                 Reel3 = new List <Stamp>{ new Stamp(0),new Stamp(0), new Stamp(0), new Stamp(0), new Stamp(0), new Stamp(0), new Stamp(0),
                     new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(3), new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8),
                     new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8), new Stamp(8) };
