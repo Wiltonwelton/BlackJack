@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Bacarrat.h" />
+    <None Remove="BlackJack.h" />
+    <None Remove="Card.h" />
+    <None Remove="Deck.h" />
+    <None Remove="Hand.h" />
+    <None Remove="Player.h" />
+    <None Remove="Reels.h" />
+    <None Remove="Slots.h" />
+    <None Remove="Stamp.h" />
+    <None Remove="VideoPoker.h" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Bacarrat.h" />
+    <Compile Include="BlackJack.h" />
+    <Compile Include="Card.h" />
+    <Compile Include="Deck.h" />
+    <Compile Include="Hand.h" />
+    <Compile Include="Player.h" />
+    <Compile Include="Reels.h" />
+    <Compile Include="Stamp.h" />
+    <Compile Include="Slots.h" />
+    <Compile Include="VideoPoker.h" />
+  </ItemGroup>
+
+</Project>
